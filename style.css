@@ -7,14 +7,18 @@ body {
   height: 100vh;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #e0f2fe;
+  display: flex;
 }
-
+/* USING SKY COLOUR PALETTE FROM TAILWINDCSS */
 :root {
   --secondary-clr: #0284c7;
   --btn-sidebar-txt: #f0f9ff;
   --sidebar-img-height: 1.5rem;
   --sidebar-icon-colours: invert(89%) sepia(4%) saturate(921%)
     hue-rotate(189deg) brightness(105%) contrast(107%);
+  --icon-height: 1.5rem;
+  --primary-clr: #f0f9ff;
 }
 
 #sidebar {
@@ -55,4 +59,81 @@ a {
   margin-left: auto;
   filter: var(--sidebar-icon-colours);
   margin-right: 0.5rem;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr;
+  grid-template-rows: 1fr 2fr;
+  max-height: 20vh;
+  width: 85vw;
+  padding-top: 1.5rem;
+  background-color: var(--primary-clr);
+  box-shadow: 0 4px 2px -2px #d9eefc;
+}
+#search-icon {
+  height: var(--icon-height);
+  margin: auto 1rem auto auto;
+}
+
+#search {
+  border-radius: 20px;
+  padding-left: 20px;
+  background-color: #e0f2fe;
+  border: none;
+  height: 2rem;
+  margin: auto 0 auto 0;
+}
+
+#notification {
+  height: var(--icon-height);
+  margin-right: 2rem;
+}
+
+#header-profile {
+  height: 2.5rem;
+}
+
+#header-username {
+  margin-left: 2rem;
+  font-weight: bold;
+  margin-right: 5rem;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+#main-profile-picture {
+  height: 4.5rem;
+}
+
+#top-right-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#bottom-left-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  grid-column: 2/3;
+}
+
+#header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+  padding-right: 3rem;
+}
+
+#header-buttons button {
+  background-color: var(--secondary-clr);
+  color: var(--btn-sidebar-txt);
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  border-radius: 15px;
+  height: fit-content;
+  border: none;
 }
