@@ -13,6 +13,8 @@ body {
   --secondary-clr: #0284c7;
   --btn-sidebar-txt: #f0f9ff;
   --sidebar-img-height: 1.5rem;
+  --sidebar-icon-colours: invert(89%) sepia(4%) saturate(921%)
+    hue-rotate(189deg) brightness(105%) contrast(107%);
 }
 
 #sidebar {
@@ -45,6 +47,12 @@ a {
   height: var(--sidebar-img-height);
   margin-left: auto;
   margin-right: 1.4rem;
-  filter: invert(89%) sepia(4%) saturate(921%) hue-rotate(189deg)
-    brightness(105%) contrast(107%);
+  filter: var(--sidebar-icon-colours);
+}
+
+#logo-sidebar {
+  height: 3.2rem;
+  margin-left: auto;
+  filter: var(--sidebar-icon-colours);
+  margin-right: 0.5rem;
 }
