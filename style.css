@@ -172,6 +172,19 @@ a {
   background-color: #e0f2fe;
 }
 
+.card-icons {
+  display: grid;
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  grid-template-columns: repeat(3, 3rem);
+  justify-content: end;
+  justify-items: center;
+}
+
+.card-icons img {
+  height: var(--sidebar-img-height);
+}
+
 .content-headings {
   display: grid;
   align-items: end;
