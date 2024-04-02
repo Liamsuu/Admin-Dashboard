@@ -194,6 +194,23 @@ a {
 
 #extra-first-card,
 #extra-second-card {
+  display: grid;
   background-color: var(--primary-clr);
   border-radius: 8px;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+#extra-first-card div {
+  padding-top: 1rem;
+  border-bottom: 1px solid black;
+}
+
+#extra-first-card p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+div#last-first-card-content {
+  border-bottom: none;
 }
